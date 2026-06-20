@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTech Automation</title>
+<link rel="stylesheet" href="style.css">
+<script>
+function showTab(id){
+  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</head>
+<body>
+
+<header>
+  <h1>CTech Automation</h1>
+  <p>PLC • HMI • SCADA • IoT • Automation Solutions</p>
+</header>
+
+<nav>
+  <button onclick="showTab('home')">Trang chủ</button>
+  <button onclick="showTab('services')">Dịch vụ</button>
+  <button onclick="showTab('projects')">Dự án</button>
+  <button onclick="showTab('demo')">Demo SCADA</button>
+  <button onclick="showTab('knowledge')">Kiến thức</button>
+  <button onclick="showTab('contact')">Liên hệ</button>
+</nav>
+
+<div class="container">
+
+<section id="home" class="tab-content active">
+<h2>Trang chủ</h2>
+<p>Chào mừng đến với CTech Automation.</p>
+</section>
+
+<section id="services" class="tab-content">
+<h2>Dịch vụ</h2>
+<ul>
+<li>Lập trình PLC</li>
+<li>Thiết kế HMI</li>
+<li>SCADA & SQL</li>
+<li>Node-RED & IoT</li>
+</ul>
+</section>
+
+<section id="projects" class="tab-content">
+<h2>Dự án</h2>
+<p>Danh sách các dự án đã triển khai.</p>
+</section>
+
+<section id="demo" class="tab-content">
+<h2>Demo SCADA</h2>
+<p>Khu vực hiển thị SCADA realtime.</p>
+</section>
+
+<section id="knowledge" class="tab-content">
+<h2>Kiến thức</h2>
+<p>Mẹo PLC, HMI, SCADA, Node-RED, Raspberry Pi.</p>
+</section>
+
+<section id="contact" class="tab-content">
+<h2>Liên hệ</h2>
+<p>Zalo | Facebook | Email</p>
+</section>
+
+</div>
+
+</body>
+</html>

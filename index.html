@@ -1,71 +1,188 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CTech Automation</title>
-<link rel="stylesheet" href="style.css">
-<script>
-function showTab(id){
-  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-}
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTech Automation</title>
 </head>
+
 <body>
 
-<header>
-  <h1>CTech Automation</h1>
-  <p>PLC • HMI • SCADA • IoT • Automation Solutions</p>
-</header>
+    <header class="header">
+        <div class="logo-box">
+            <h1 class="logo">CTech Automation</h1>
+            <p class="slogan">PLC • HMI • SCADA • IoT • Tủ điện tự động hóa</p>
+        </div>
 
-<nav>
-  <button onclick="showTab('home')">Trang chủ</button>
-  <button onclick="showTab('services')">Dịch vụ</button>
-  <button onclick="showTab('projects')">Dự án</button>
-  <button onclick="showTab('demo')">Demo SCADA</button>
-  <button onclick="showTab('knowledge')">Kiến thức</button>
-  <button onclick="showTab('contact')">Liên hệ</button>
-</nav>
+        <nav class="navbar">
+            <a class="nav-link" href="#home">Trang chủ</a>
+            <a class="nav-link" href="#services">Dịch vụ</a>
+            <a class="nav-link" href="#projects">Dự án</a>
+            <a class="nav-link" href="#scada">Demo SCADA</a>
+            <a class="nav-link" href="#knowledge">Kiến thức</a>
+            <a class="nav-link" href="#contact">Liên hệ</a>
+        </nav>
+    </header>
 
-<div class="container">
 
-<section id="home" class="tab-content active">
-<h2>Trang chủ</h2>
-<p>Chào mừng đến với CTech Automation.</p>
-</section>
+    <main class="main">
 
-<section id="services" class="tab-content">
-<h2>Dịch vụ</h2>
-<ul>
-<li>Lập trình PLC</li>
-<li>Thiết kế HMI</li>
-<li>SCADA & SQL</li>
-<li>Node-RED & IoT</li>
-</ul>
-</section>
+        <section id="home" class="section hero-section">
+            <div class="hero-content">
+                <p class="hero-label">Giải pháp tự động hóa thực tế</p>
 
-<section id="projects" class="tab-content">
-<h2>Dự án</h2>
-<p>Danh sách các dự án đã triển khai.</p>
-</section>
+                <h2 class="hero-title">
+                    Thiết kế, lập trình và giám sát hệ thống PLC - HMI - SCADA
+                </h2>
 
-<section id="demo" class="tab-content">
-<h2>Demo SCADA</h2>
-<p>Khu vực hiển thị SCADA realtime.</p>
-</section>
+                <p class="hero-description">
+                    CTech Automation hỗ trợ xây dựng hệ thống điều khiển, giám sát,
+                    lưu dữ liệu và báo cáo cho máy móc, dây chuyền và nhà máy.
+                </p>
 
-<section id="knowledge" class="tab-content">
-<h2>Kiến thức</h2>
-<p>Mẹo PLC, HMI, SCADA, Node-RED, Raspberry Pi.</p>
-</section>
+                <div class="hero-buttons">
+                    <a class="btn btn-primary" href="#contact">Liên hệ tư vấn</a>
+                    <a class="btn btn-secondary" href="#projects">Xem dự án</a>
+                </div>
+            </div>
+        </section>
 
-<section id="contact" class="tab-content">
-<h2>Liên hệ</h2>
-<p>Zalo | Facebook | Email</p>
-</section>
 
-</div>
+        <section id="services" class="section services-section">
+            <div class="section-heading">
+                <p class="section-label">Dịch vụ</p>
+                <h2 class="section-title">CTech Automation có thể hỗ trợ gì?</h2>
+                <p class="section-description">
+                    Tập trung vào các giải pháp thực tế, dễ vận hành và phù hợp với nhu cầu sản xuất.
+                </p>
+            </div>
+
+            <div class="card-grid">
+                <div class="service-card">
+                    <h3>Lập trình PLC</h3>
+                    <p>Siemens, Delta, Modbus RTU/TCP, điều khiển bơm, van, biến tần.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Thiết kế HMI</h3>
+                    <p>Giao diện vận hành, cảnh báo, trend, recipe, report.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>SCADA & Web SCADA</h3>
+                    <p>Giám sát dữ liệu, database, dashboard realtime và báo cáo.</p>
+                </div>
+
+                <div class="service-card">
+                    <h3>Tủ điện tự động hóa</h3>
+                    <p>Thiết kế sơ đồ, chọn vật tư, đấu nối, kiểm tra và vận hành.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="section projects-section">
+            <div class="section-heading">
+                <p class="section-label">Dự án</p>
+                <h2 class="section-title">Một số dự án tiêu biểu</h2>
+            </div>
+
+            <div class="project-list">
+                <article class="project-card">
+                    <img class="project-image" src="images/project-1.jpg" alt="Dự án bơm nước">
+
+                    <div class="project-content">
+                        <h3>Hệ thống giám sát bơm nước</h3>
+                        <p>PLC điều khiển bơm, giám sát áp suất, lưu lượng, trạng thái chạy/lỗi.</p>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <img class="project-image" src="images/project-2.jpg" alt="Tủ điện biến tần">
+
+                    <div class="project-content">
+                        <h3>Tủ điện điều khiển biến tần</h3>
+                        <p>Điều khiển motor qua biến tần, giám sát dòng, tần số và lỗi thiết bị.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="scada" class="section scada-section">
+            <div class="section-heading">
+                <p class="section-label">Demo SCADA</p>
+                <h2 class="section-title">Mô phỏng giám sát realtime</h2>
+                <p class="section-description">
+                    Khu vực demo trạng thái thiết bị như bơm, van, cảm biến và cảnh báo.
+                </p>
+            </div>
+
+            <div class="scada-panel">
+                <div class="scada-card">
+                    <span class="tag-name">Bơm P-101</span>
+                    <span class="tag-value status-running">RUNNING</span>
+                </div>
+
+                <div class="scada-card">
+                    <span class="tag-name">Van V-101</span>
+                    <span class="tag-value status-open">OPEN</span>
+                </div>
+
+                <div class="scada-card">
+                    <span class="tag-name">Áp suất PT-101</span>
+                    <span class="tag-value">2.5 bar</span>
+                </div>
+
+                <div class="scada-card">
+                    <span class="tag-name">Lưu lượng FT-101</span>
+                    <span class="tag-value">12.8 m³/h</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="knowledge" class="section knowledge-section">
+            <div class="section-heading">
+                <p class="section-label">Kiến thức</p>
+                <h2 class="section-title">Chia sẻ kỹ thuật thực tế</h2>
+            </div>
+
+            <div class="article-list">
+                <article class="article-card">
+                    <h3>Modbus RTU và Modbus TCP khác nhau gì?</h3>
+                    <p>Bài viết ngắn chia sẻ cách phân biệt và ứng dụng trong hệ thống thực tế.</p>
+                </article>
+
+                <article class="article-card">
+                    <h3>Cách chọn biến tần cho motor</h3>
+                    <p>Một số lưu ý khi chọn biến tần theo công suất, tải và môi trường làm việc.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="contact" class="section contact-section">
+            <div class="section-heading">
+                <p class="section-label">Liên hệ</p>
+                <h2 class="section-title">Kết nối với CTech Automation</h2>
+            </div>
+
+            <div class="contact-box">
+                <p><strong>CTech Automation</strong></p>
+                <p>Khu vực hỗ trợ: TP.HCM và các tỉnh lân cận</p>
+                <p>Zalo: 09xx xxx xxx</p>
+                <p>Email: ctech.automation@example.com</p>
+                <p>Facebook: facebook.com/ctechautomation</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <p>© 2026 CTech Automation. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>

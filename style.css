@@ -56,5 +56,6 @@ html {
 }
 
 .nav-link:hover {
+    background-color: #1e293b;
     color: #38bdf8;
 }
